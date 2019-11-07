@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
+
 <body>
-        <!--First we make the nav bar-->
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a class="active" href="contact.html">Contact</a>
-            <div class="sec-dropdown">
-              <button class="dropbtn">Security 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="pagessecurity/security.html">Security</a>
-                <a href="pagessecurity/security-antivirus.html">Antivirus</a>
-                <a href="pagessecurity/security-passwords.html">Passwords</a>
-                <a href="pagessecurity/security-links.html">Suspicious Links</a>
-              </div>
-          
-            </div> 
-            <div class="sca-dropdown">
-                <button class="dropbtn">Scams 
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="pagesscam/scams.html">Scams</a>
-                    <a href="pagesscam/scams-email.html">Emails</a>
-                    <a href="pagesscam/scams-downloads.html">Downloads</a>
-                    <a href="pagesscam/scams-phishing.html">Phishing</a>
-                  </div>
+  <!--First we make the nav bar-->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="contact.html">Contact</a>
+    <div class="sec-dropdown">
+      <button class="dropbtn">Security
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="pagessecurity/security-antivirus.html">Antivirus</a>
+        <a href="pagessecurity/security-passwords.html">Passwords</a>
+        <a href="pagessecurity/security-links.html">Suspicious Links</a>
+      </div>
+
+    </div>
+    <div class="sca-dropdown">
+      <button class="dropbtn">Scams
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="pagesscam/scams.html">Scams</a>
+        <a href="pagesscam/scams-email.html">Emails</a>
+        <a href="pagesscam/scams-downloads.html">Downloads</a>
+        <a href="pagesscam/scams-phishing.html">Phishing</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Now we make a Footer-->
+  <footer>
+    <a href="mailto:Jameshessell@gmail.com">
+      <p>&copy;James Hessell-Bowman. 2019</p>
+    </a>
+  </footer>
+  <!--Nav Bar Complete. All pages Link to each other now-->
+
+  <!--Contact form-->
+  <section class="contact-container">
+    <form name="contact-form" action="mailto:jameshessell@gmail.com" method="get">
+        <div class="row">
+            <div class="col-25">
+                <label for="firstname">First Name</label>
             </div>
-          </div>
+            <div class="col-75">
+                <input type="text" name="firstname" id="fname" placeholder="your first name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lastname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="lastname" id="lname" placeholder="your last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+                <select name="country" id="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="new-zealand">New Zealand</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+                <textarea name="subject" id="subject" placeholder="Write something.."
+                    style="height: 200px;"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+  </section>
+  <div class="google-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98322.4904434763!2d176.74935896908613!3d-39.636708569474386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6851486a538aeb%3A0x500ef6143a29918!2sHastings!5e0!3m2!1sen!2snz!4v1567373481518!5m2!1sen!2snz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
 </body>
+
 </html>
